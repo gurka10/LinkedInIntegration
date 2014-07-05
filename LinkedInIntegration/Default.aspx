@@ -25,6 +25,7 @@
                 <h3>Your Details</h3>
                 <asp:TextBox ID="lblYourDetails" ReadOnly="true" runat="server" TextMode="MultiLine" Rows="10" Width="650px"></asp:TextBox>
             </div>
+            <asp:Button ID="btnPersist" runat="server" Text="Find User By ProfileId" Visible="false" OnClick="HomeBtn_Click" />
         </fieldset>
     </div>
 </asp:Content>
