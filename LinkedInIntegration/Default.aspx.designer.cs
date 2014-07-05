@@ -13,31 +13,13 @@ namespace LinkedInIntegration {
     public partial class _Default {
         
         /// <summary>
-        /// btnCreateAuthorization control.
+        /// connectionId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCreateAuthorization;
-        
-        /// <summary>
-        /// txtRequestToken control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRequestToken;
-        
-        /// <summary>
-        /// txtTokenSecret control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTokenSecret;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl connectionId;
         
         /// <summary>
         /// hypAuthToken control.
@@ -49,75 +31,12 @@ namespace LinkedInIntegration {
         protected global::System.Web.UI.WebControls.HyperLink hypAuthToken;
         
         /// <summary>
-        /// txtoAuth_token control.
+        /// lblYourDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtoAuth_token;
-        
-        /// <summary>
-        /// txtoAuth_verifier control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtoAuth_verifier;
-        
-        /// <summary>
-        /// btnGetAccessToken control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGetAccessToken;
-        
-        /// <summary>
-        /// txtAccessToken control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAccessToken;
-        
-        /// <summary>
-        /// txtAccessTokenSecret control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAccessTokenSecret;
-        
-        /// <summary>
-        /// txtStatus control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtStatus;
-        
-        /// <summary>
-        /// btnRequestProfile control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRequestProfile;
-        
-        /// <summary>
-        /// txtApiResponse control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtApiResponse;
+        protected global::System.Web.UI.WebControls.TextBox lblYourDetails;
     }
 }
