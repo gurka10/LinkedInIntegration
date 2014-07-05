@@ -23,22 +23,16 @@ namespace LinkedInIntegration
                 {
                     hypAuthToken.NavigateUrl = Application["oauthLink"].ToString();
                     hypAuthToken.Text = Application["oauthLink"].ToString();
-
-                    Application["oauth_token"] = oauth_token;
-                    Application["oauth_verifier"] = oauth_verifier;
-
-
+                   
                     _oauth._LinkedInObject._token = oauth_token;
                     _oauth._LinkedInObject._tokenSecret = Application["reuqestTokenSecret"].ToString();
                     _oauth.Verifier = oauth_verifier;
-
                     _oauth.AccessTokenGet(_oauth._LinkedInObject._token);
 
                     string response = _oauth.APIWebRequest("GET", "https://api.linkedin.com/v1/people/~:(first-name,last-name,email-address,public-profile-url,positions:(title))", null);
 
                     lblYourDetails.Text = _oauth.ProcessXMLResponseForYourProfile(response);
                     Session["oAuthProfileDetails"] = lblYourDetails.Text;
-                    Session["oAuthLinkedIn"] = _oauth;
 
                     lblYourDetails.Focus();
                     connectionId.Visible = false;
@@ -48,7 +42,16 @@ namespace LinkedInIntegration
                 {
                     GenerateLinkedInConnectionURL();
                     _oauth = (oAuthLinkedIn)Session["oAuthLinkedIn"];
-                    btnPersist.Visible = false;
+                    if (Session["oAuthProfileDetails"] != null)
+                    {
+                        lblYourDetails.Text = (string)Session["oAuthProfileDetails"];
+                        btnPersist.Visible = true;
+                    }
+                    else
+                    {
+                        btnPersist.Visible = false;
+                    }
+                    
                 }
             }
         }
