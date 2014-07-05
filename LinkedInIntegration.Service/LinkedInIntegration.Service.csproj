@@ -43,6 +43,7 @@
     <Compile Include="Common\LinkedInObject.cs" />
     <Compile Include="DTO\LinkedInProfiles.cs" />
     <Compile Include="DTO\Profile.cs" />
+    <Compile Include="Enums\MethodEnums.cs" />
     <Compile Include="oAuthBase2.cs" />
     <Compile Include="oAuthLinkedIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
